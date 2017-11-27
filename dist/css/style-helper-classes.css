@@ -5546,4 +5546,14 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.w-35 {
+  width: 35%; }
+
+.w-65 {
+  width: 65%; }
+
+.label {
+  text-transform: uppercase;
+  color: darkgrey; }
+
 /*# sourceMappingURL=style-helper-classes.css.map */
