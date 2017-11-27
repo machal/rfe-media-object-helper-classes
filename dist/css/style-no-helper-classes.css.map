@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "style-no-helper-classes.css",
+	"sources": [
+		"../../src/scss/index-no-helper-classes.scss"
+	],
+	"mappings": "",
+	"names": []
+}
