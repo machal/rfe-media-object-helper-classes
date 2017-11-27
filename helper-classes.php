@@ -11,39 +11,80 @@
   </head>
   <body>
 
-
+<?php include("_function-list-item.php"); ?>
 
     <div class="container">
 
       <h1>Demo with Helper Classes</h1>
 
-      <h2>You Might Also Like</h2>
-
+      <h2 class="mb-3">You Might Also Like</h2>
 
       <div class="row">
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-1.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/b593300a-78fc-4713-ab9b-e63a62809011_tv_w300.jpg?1509639891118",
+            $label = "World",
+            $title = "Raw Video: Interview with Hong Kong Student Protesters"
+          )
+          ?>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-2.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/B404981D-391E-4D76-A02A-D435B608FEBC_w300_r1.jpg?1509639891118",
+            $label = "World",
+            $title = "Health Care Specialists Consider Different Treatments for Ebola"
+          )
+          ?>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-3.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/54C2F602-83C5-496E-B2C0-B480DE89D7D6_w300_h170.jpg?1509639891118",
+            $label = "World",
+            $title = "American Detained in North Korea Describes Hard Life"
+          )
+          ?>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-2.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/B404981D-391E-4D76-A02A-D435B608FEBC_w300_r1.jpg?1509639891118",
+            $label = "World",
+            $title = "Health Care Specialists Consider Different Treatments for Ebola"
+          )
+          ?>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-3.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/54C2F602-83C5-496E-B2C0-B480DE89D7D6_w300_h170.jpg?1509639891118",
+            $label = "World",
+            $title = "American Detained in North Korea Describes Hard Life"
+          )
+          ?>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <?php include "_list-item-1.php"; ?>
+          <?php
+          echo
+          list_item(
+            $image = "http://gdb.voanews.com/b593300a-78fc-4713-ab9b-e63a62809011_tv_w300.jpg?1509639891118",
+            $label = "World",
+            $title = "Raw Video: Interview with Hong Kong Student Protesters"
+          )
+          ?>
         </div>
 
       </div><!-- .row -->
