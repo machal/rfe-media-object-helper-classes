@@ -18,16 +18,6 @@
 
       <h1>Demo with Helper Classes</h1>
 
-      <pre>
-        <code>
-          <?php
-          foreach ($data as $item) {
-             echo  $item['label'].'<br>';
-          }
-          ?>
-        </code>
-      </pre>
-
       <h2 class="mb-3">Normal variant</h2>
 
       <div class="row no-gutters">
@@ -79,6 +69,33 @@
           </div>
 
         <?php endforeach; ?>
+
+      <h2 class="mb-3">Overlay variant</h2>
+
+      <div class="row no-gutters">
+
+        <?php foreach  ($data as $item): ?>
+
+          <div class="col-sm-6 col-md-4">
+
+            <?php
+              echo
+                list_item(
+                  $image = $item['image'],
+                  $label = $item['label'],
+                  $title = $item['title'],
+                  $iconImage = $item['iconImage'],
+                  $iconText = $item['iconText'],
+                  $isVertical = null,
+                  $isDark = $item['isDark'],
+                  $isOverlay = true
+                );
+            ?>
+
+          </div>
+
+        <?php endforeach; ?>
+
 
       </div><!-- .row -->
 

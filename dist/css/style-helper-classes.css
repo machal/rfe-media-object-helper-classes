@@ -5573,4 +5573,12 @@ a.text-dark:focus, a.text-dark:hover {
   width: 1rem;
   height: 1rem; }
 
+.list-item--overlay .list-item__heading {
+  position: absolute;
+  bottom: 0;
+  left: .5rem;
+  right: .5rem;
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.75); }
+
 /*# sourceMappingURL=style-helper-classes.css.map */
