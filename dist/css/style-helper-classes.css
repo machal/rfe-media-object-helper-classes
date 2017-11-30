@@ -5556,4 +5556,21 @@ a.text-dark:focus, a.text-dark:hover {
   text-transform: uppercase;
   color: darkgrey; }
 
+.icon {
+  background: rgba(0, 0, 0, 0.75);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.icon--top-left {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.icon__img {
+  width: 1rem;
+  height: 1rem; }
+
 /*# sourceMappingURL=style-helper-classes.css.map */

@@ -11,7 +11,7 @@
   </head>
   <body>
 
-<?php include("_function-list-item.php"); ?>
+<?php include("_functions.php"); ?>
 
     <div class="container">
 
@@ -27,7 +27,9 @@
           list_item(
             $image = "http://gdb.voanews.com/b593300a-78fc-4713-ab9b-e63a62809011_tv_w300.jpg?1509639891118",
             $label = "World",
-            $title = "Raw Video: Interview with Hong Kong Student Protesters"
+            $title = "Raw Video: Interview with Hong Kong Student Protesters",
+            $iconImage = "camera.svg",
+            $iconText = "Contains Video"
           )
           ?>
         </div>
@@ -60,7 +62,9 @@
           list_item(
             $image = "http://gdb.voanews.com/B404981D-391E-4D76-A02A-D435B608FEBC_w300_r1.jpg?1509639891118",
             $label = "World",
-            $title = "Health Care Specialists Consider Different Treatments for Ebola"
+            $title = "Health Care Specialists Consider Different Treatments for Ebola",
+            $iconImage = "camera.svg",
+            $iconText = "Contains Video"
           )
           ?>
         </div>
