@@ -23,7 +23,7 @@ function list_item(
   ) {
   $isWithIcon = ($iconImage != null);
   return '
-  <div class="list-item d-flex '.(($isVertical) ? 'list-item--vertical flex-column' : 'flex-row').'">
+  <div class="list-item d-flex mb-3 '.(($isVertical) ? 'list-item--vertical flex-column' : 'flex-row').'">
     <p class="list-item__image mb-0 '.(($isVertical) ? '' : 'w-35 mr-2').'">
       <a href="#" class="d-block '.(($isWithIcon) ? 'position-relative' : '').'">
         <img src="'.$image.'" alt="Image" class="img-fluid">

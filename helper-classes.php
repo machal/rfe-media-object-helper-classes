@@ -11,92 +11,71 @@
   </head>
   <body>
 
+<?php include("_data.php"); ?>
 <?php include("_functions.php"); ?>
 
     <div class="container">
 
       <h1>Demo with Helper Classes</h1>
 
-      <h2 class="mb-3">You Might Also Like</h2>
+      <pre>
+        <code>
+          <?php
+          foreach ($data as $item) {
+             echo  $item['label'].'<br>';
+          }
+          ?>
+        </code>
+      </pre>
+
+      <h2 class="mb-3">Normal variant</h2>
 
       <div class="row">
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/b593300a-78fc-4713-ab9b-e63a62809011_tv_w300.jpg?1509639891118",
-            $label = "World",
-            $title = "Raw Video: Interview with Hong Kong Student Protesters"
-          )
-          ?>
-        </div>
+        <?php foreach  ($data as $item): ?>
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/B404981D-391E-4D76-A02A-D435B608FEBC_w300_r1.jpg?1509639891118",
-            $label = "World",
-            $title = "[Variant With Icon] Health Care Specialists Consider Different Treatments for Ebola",
-            $iconImage = "camera.svg",
-            $iconText = "Contains Video"
-          )
-          ?>
-        </div>
+          <div class="col-sm-6 col-md-4">
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/54C2F602-83C5-496E-B2C0-B480DE89D7D6_w300_h170.jpg?1509639891118",
-            $label = "World",
-            $title = "American Detained in North Korea Describes Hard Life"
-          )
-          ?>
-        </div>
+            <?php
+              echo
+                list_item(
+                  $image = $item['image'],
+                  $label = $item['label'],
+                  $title = $item['title'],
+                  $iconImage = $item['iconImage'],
+                  $iconText = $item['iconText']
+                );
+            ?>
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/B404981D-391E-4D76-A02A-D435B608FEBC_w300_r1.jpg?1509639891118",
-            $label = "World",
-            $title = "Health Care Specialists Consider Different Treatments for Ebola",
-            $iconImage = null,
-            $iconText = null,
-            $isVertical = true
-          )
-          ?>
-        </div>
+          </div>
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/54C2F602-83C5-496E-B2C0-B480DE89D7D6_w300_h170.jpg?1509639891118",
-            $label = "World",
-            $title = "[Variant With Icon] American Detained in North Korea Describes Hard Life",
-            $iconImage = "camera.svg",
-            $iconText = "Contains Video",
-            $isVertical = true
-          )
-          ?>
-        </div>
+        <?php endforeach; ?>
 
-        <div class="col-sm-6 col-md-4">
-          <?php
-          echo
-          list_item(
-            $image = "http://gdb.voanews.com/b593300a-78fc-4713-ab9b-e63a62809011_tv_w300.jpg?1509639891118",
-            $label = "World",
-            $title = "Raw Video: Interview with Hong Kong Student Protesters",
-            $iconImage = null,
-            $iconText = null,
-            $isVertical = true
-          )
-          ?>
-        </div>
+      </div><!-- .row -->
+
+      <h2 class="mb-3">Vertical variant</h2>
+
+      <div class="row">
+
+        <?php foreach  ($data as $item): ?>
+
+          <div class="col-sm-6 col-md-4">
+
+            <?php
+              echo
+                list_item(
+                  $image = $item['image'],
+                  $label = $item['label'],
+                  $title = $item['title'],
+                  $iconImage = $item['iconImage'],
+                  $iconText = $item['iconText'],
+                  $isVertical = true
+                );
+            ?>
+
+          </div>
+
+        <?php endforeach; ?>
 
       </div><!-- .row -->
 
