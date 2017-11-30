@@ -41,7 +41,9 @@ $data = array(
     "label" => "World",
     "title" => "Raw Video: Interview with Hong Kong Student Protesters",
     "iconImage" => null,
-    "iconText" => null
+    "iconText" => null,
+    "isVertical" => null,
+    "isDark" => true
   ),
 );
 

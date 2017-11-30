@@ -30,32 +30,7 @@
 
       <h2 class="mb-3">Normal variant</h2>
 
-      <div class="row">
-
-        <?php foreach  ($data as $item): ?>
-
-          <div class="col-sm-6 col-md-4">
-
-            <?php
-              echo
-                list_item(
-                  $image = $item['image'],
-                  $label = $item['label'],
-                  $title = $item['title'],
-                  $iconImage = $item['iconImage'],
-                  $iconText = $item['iconText']
-                );
-            ?>
-
-          </div>
-
-        <?php endforeach; ?>
-
-      </div><!-- .row -->
-
-      <h2 class="mb-3">Vertical variant</h2>
-
-      <div class="row">
+      <div class="row no-gutters">
 
         <?php foreach  ($data as $item): ?>
 
@@ -69,7 +44,35 @@
                   $title = $item['title'],
                   $iconImage = $item['iconImage'],
                   $iconText = $item['iconText'],
-                  $isVertical = true
+                  $isVertical = false,
+                  $isDark = $item['isDark']
+                );
+            ?>
+
+          </div>
+
+        <?php endforeach; ?>
+
+      </div><!-- .row -->
+
+      <h2 class="mb-3">Vertical variant</h2>
+
+      <div class="row no-gutters">
+
+        <?php foreach  ($data as $item): ?>
+
+          <div class="col-sm-6 col-md-4">
+
+            <?php
+              echo
+                list_item(
+                  $image = $item['image'],
+                  $label = $item['label'],
+                  $title = $item['title'],
+                  $iconImage = $item['iconImage'],
+                  $iconText = $item['iconText'],
+                  $isVertical = true,
+                  $isDark = $item['isDark']
                 );
             ?>
 
