@@ -1,3 +1,6 @@
+// Width helper classes
+// --------------------
+
 .w-35 {
   width: 35%;
 }
@@ -6,11 +9,16 @@
   width: 65%;
 }
 
+// Label component
+// ---------------
 
 .label {
   text-transform: uppercase;
   color: darkgrey;
 }
+
+// Icon component
+// --------------
 
 .icon {
   background: rgba(0, 0, 0, .75);
@@ -31,6 +39,10 @@
   width: 1rem;
   height: 1rem;
 }
+
+
+// List Item component
+// -------------------
 
 .list-item--overlay .list-item__heading {
   position: absolute;
